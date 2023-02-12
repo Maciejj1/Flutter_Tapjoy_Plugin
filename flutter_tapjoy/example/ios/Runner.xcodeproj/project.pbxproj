@@ -395,7 +395,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.anavrinapps.flutterTapjoyExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itlight.newflutterTapjoyExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -523,7 +523,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.anavrinapps.flutterTapjoyExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itlight.newflutterTapjoyExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -546,7 +546,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.anavrinapps.flutterTapjoyExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itlight.newflutterTapjoyExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};

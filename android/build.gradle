@@ -1,4 +1,4 @@
-group 'com.anavrinapps.flutter_tapjoy'
+group 'com.itlight.new_flutter_tapjoy'
 version '1.0'
 
 buildscript {

@@ -1,4 +1,4 @@
-package com.anavrinapps.flutter_tapjoy;
+package com.itlight.new_flutter_tapjoy;
 
 import android.app.Activity;
 import android.content.Context;
@@ -29,8 +29,8 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 
-/** FlutterTapjoyPlugin */
-public class FlutterTapjoyPlugin implements FlutterPlugin, MethodCallHandler, ActivityAware {
+/** NewFlutterTapjoyPlugin */
+public class NewFlutterTapjoyPlugin implements FlutterPlugin, MethodCallHandler, ActivityAware {
   private MethodChannel channel;
   static Activity activity;
   private Context context;
@@ -231,7 +231,7 @@ public class FlutterTapjoyPlugin implements FlutterPlugin, MethodCallHandler, Ac
 
   @Override
   public void onAttachedToActivity(@NonNull  ActivityPluginBinding binding) {
-    FlutterTapjoyPlugin.activity = binding.getActivity();
+    NewFlutterTapjoyPlugin.activity = binding.getActivity();
   }
 
 
@@ -242,7 +242,7 @@ public class FlutterTapjoyPlugin implements FlutterPlugin, MethodCallHandler, Ac
 
   @Override
   public void onReattachedToActivityForConfigChanges(@NonNull  ActivityPluginBinding binding) {
-    FlutterTapjoyPlugin.activity = binding.getActivity();
+    NewFlutterTapjoyPlugin.activity = binding.getActivity();
   }
 
 
@@ -253,13 +253,13 @@ public class FlutterTapjoyPlugin implements FlutterPlugin, MethodCallHandler, Ac
 
   void invokeMethod(@NonNull final String methodName,final Hashtable<String,Object> data) {
     try {
-      FlutterTapjoyPlugin.activity.runOnUiThread(new Runnable() {@Override
+      NewFlutterTapjoyPlugin.activity.runOnUiThread(new Runnable() {@Override
       public void run() {
         channel.invokeMethod(methodName,data);
       }
       });
     } catch(final Exception e) {
-      Log.e("FlutterTapjoyPlugin", "Error " + e.toString());
+      Log.e("NewFlutterTapjoyPlugin", "Error " + e.toString());
     }
   }
 }

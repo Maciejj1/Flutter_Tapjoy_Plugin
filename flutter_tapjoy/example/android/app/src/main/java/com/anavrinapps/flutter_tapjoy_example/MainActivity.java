@@ -1,4 +1,4 @@
-package com.anavrinapps.flutter_tapjoy_example;
+package com.itlight.new_flutter_tapjoy_example;
 
 import io.flutter.embedding.android.FlutterActivity;
 

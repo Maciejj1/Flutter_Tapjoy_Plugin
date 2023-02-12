@@ -1,10 +1,10 @@
 import Flutter
 import UIKit
 
-public class SwiftFlutterTapjoyPlugin: NSObject, FlutterPlugin {
+public class SwiftNewFlutterTapjoyPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "flutter_tapjoy", binaryMessenger: registrar.messenger())
-    let instance = SwiftFlutterTapjoyPlugin()
+    let instance = SwiftNewFlutterTapjoyPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 

@@ -4,3 +4,5 @@ Add new version of Tapjoy
 Fix bugs 
 ## 0.0.3
 Fix bugs and add example
+## 0.0.4
+Fix bugs

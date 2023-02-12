@@ -1,6 +1,6 @@
 name: new_flutter_tapjoy
 description: Tapjoy plugin for both Android & iOS
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/Maciejj1/Flutter_Tapjoy_Plugin
 
 environment:

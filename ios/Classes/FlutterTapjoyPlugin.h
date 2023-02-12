@@ -3,5 +3,5 @@
 #import <Tapjoy/TJPlacement.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 
-@interface FlutterTapjoyPlugin : NSObject<FlutterPlugin>
+@interface NewFlutterTapjoyPlugin : NSObject<FlutterPlugin>
 @end

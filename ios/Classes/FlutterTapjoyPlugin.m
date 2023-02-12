@@ -1,6 +1,6 @@
-#import "FlutterTapjoyPlugin.h"
+#import "NewFlutterTapjoyPlugin.h"
 
-@implementation FlutterTapjoyPlugin
+@implementation NewFlutterTapjoyPlugin
 
     FlutterMethodChannel* tapJoyChannel;
 FlutterViewController* flutterViewController;
@@ -10,7 +10,7 @@ FlutterViewController* flutterViewController;
   FlutterMethodChannel* channel = [FlutterMethodChannel
       methodChannelWithName:@"flutter_tapjoy"
             binaryMessenger:[registrar messenger]];
-    FlutterTapjoyPlugin* instance = [[FlutterTapjoyPlugin alloc] init];
+    NewFlutterTapjoyPlugin* instance = [[NewFlutterTapjoyPlugin alloc] init];
     
   [registrar addMethodCallDelegate:instance channel:channel];
     
@@ -45,7 +45,7 @@ FlutterViewController* flutterViewController;
           result(@NO);
       }
   } else if ([@"createPlacement" isEqualToString:call.method]) {
-      [FlutterTapjoyPlugin addPlacement:placementName];
+      [NewFlutterTapjoyPlugin addPlacement:placementName];
   } else if ([@"requestContent" isEqualToString:call.method]) {
       TJPlacement *myPlacement = placements[placementName];
       if (myPlacement) {

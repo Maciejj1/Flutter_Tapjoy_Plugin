@@ -36,19 +36,14 @@ public class NewFlutterTapjoyPlugin implements FlutterPlugin, MethodCallHandler,
   private Context context;
   Hashtable<String, TJPlacement> placements = new Hashtable<String, TJPlacement>();
 
-//   @Override
-//   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
-//     channel = new MethodChannel(getFlutterEngine().getDartExecutor().getBinaryMessenger(), "new_flutter_tapjoy");
-//     channel.setMethodCallHandler(this);
-//     context = flutterPluginBinding.getApplicationContext();
-//
-//   }
-@Override
-    protected void onAttachedToEngine(Bundle savedInstanceState) {
-      super.onCreate(savedInstanceState);
-      GeneratedPluginRegistrant.registerWith(getFlutterEngine());
-      context = flutterPluginBinding.getApplicationContext();
-        new MethodChannel(getFlutterEngine().getDartExecutor().getBinaryMessenger(), "new_flutter_tapjoy").setMethodCallHandler(new MethodChannel.MethodCallHandler() {
+  @Override
+  public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
+    channel = new MethodChannel(getFlutterEngine().getDartExecutor().getBinaryMessenger(), "new_flutter_tapjoy");
+    channel.setMethodCallHandler(this);
+    context = flutterPluginBinding.getApplicationContext();
+
+  }
+
   @Override
   public void onMethodCall(@NonNull MethodCall call, @NonNull final Result result) {
     switch (call.method) {
@@ -266,7 +261,5 @@ public class NewFlutterTapjoyPlugin implements FlutterPlugin, MethodCallHandler,
     } catch(final Exception e) {
       Log.e("NewFlutterTapjoyPlugin", "Error " + e.toString());
     }
-  }
-    });
   }
 }

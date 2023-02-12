@@ -1,8 +1,7 @@
 name: flutter_tapjoy
 description: Tapjoy plugin for both Android & iOS
 version: 0.0.1
-author: Maciej Wawryszuk
-homepage: https://github.com/AnavrinApps/flutter_plugins
+homepage: https://github.com/Maciejj1/Flutter_Tapjoy_Plugin
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
@@ -21,7 +20,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.anavrinapps.flutter_tapjoy
+        package: com.itlight.flutter_tapjoy
         pluginClass: FlutterTapjoyPlugin
       ios:
         pluginClass: FlutterTapjoyPlugin

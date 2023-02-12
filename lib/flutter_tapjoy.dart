@@ -63,7 +63,7 @@ typedef void TJGetCurrencyBalanceHandler(
 typedef void TJEarnedCurrencyAlertHandler(
     String? currencyName, int? earnedAmount, String? error);
 
-const MethodChannel _channel = const MethodChannel('flutter_tapjoy');
+const MethodChannel _channel = const MethodChannel('new_flutter_tapjoy');
 
 class TapJoyPlugin {
   static TapJoyPlugin shared = new TapJoyPlugin();

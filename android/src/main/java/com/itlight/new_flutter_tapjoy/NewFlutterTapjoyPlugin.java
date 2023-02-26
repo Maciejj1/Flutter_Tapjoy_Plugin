@@ -38,7 +38,7 @@ public class NewFlutterTapjoyPlugin implements FlutterPlugin, MethodCallHandler,
 
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
-    channel = new MethodChannel(getFlutterEngine().getDartExecutor().getBinaryMessenger(), "new_flutter_tapjoy");
+    channel = new MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor().getBinaryMessenger(), "new_flutter_tapjoy");
     channel.setMethodCallHandler(this);
     context = flutterPluginBinding.getApplicationContext();
 

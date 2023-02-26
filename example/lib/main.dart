@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_flutter_tapjoy/new_flutter_tapjoy.dart';
+import 'package:flutter_tapjoy/new_flutter_tapjoy.dart';
 
 void main() {
   runApp(MyApp());
